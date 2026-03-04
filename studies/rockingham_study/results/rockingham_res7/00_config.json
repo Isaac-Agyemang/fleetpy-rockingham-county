@@ -1,0 +1,89 @@
+{
+    "scenario_parameters": {
+        "initial_state_scenario": null,
+        "sim_env": "BatchOfferSimulation",
+        "network_type": "NetworkBasicWithStore",
+        "network_name": "rockingham_res7",
+        "demand_name": "skat_fy24_res7",
+        "rq_file": "requests.csv",
+        "random_seed": 0,
+        "n_parallel_sim": 1,
+        "start_time": 0,
+        "end_time": 39660,
+        "time_step": 60,
+        "route_output_flag": true,
+        "replay_flag": true,
+        "nr_mod_operators": 1,
+        "op_module": "PoolingIRSAssignmentBatchOptimization",
+        "op_fleet_composition": {
+            "rockingham_vehtype": 16
+        },
+        "rq_type": "BasicRequest",
+        "user_max_decision_time": 60,
+        "op_min_wait_time": 0,
+        "op_max_wait_time": 600,
+        "op_max_wait_time_2": null,
+        "op_max_detour_time_factor": 150,
+        "op_offer_time_window": null,
+        "op_add_constant_detour_time": null,
+        "op_max_constant_detour_time": null,
+        "op_min_detour_time_window": null,
+        "op_const_boarding_time": 180,
+        "op_add_boarding_time": 0,
+        "op_base_fare": 200,
+        "op_distance_fare": 0,
+        "op_time_fare": 0.24,
+        "op_speed_factor": 1,
+        "op_min_standard_fare": 200,
+        "op_vr_control_func_dict": {
+            "func_key": "distance_and_user_times",
+            "vot": 0.45
+        },
+        "op_reoptimisation_timestep": 120,
+        "study_name": "rockingham_study",
+        "n_cpu_per_sim": 1,
+        "evaluate": 1,
+        "log_level": "info",
+        "keep_old": false,
+        "scenario_name": "rockingham_res7",
+        "op_rp_batch_optimizer": "AlonsoMora"
+    },
+    "list_operator_attributes": [
+        {
+            "op_module": "PoolingIRSAssignmentBatchOptimization",
+            "op_fleet_composition": {
+                "rockingham_vehtype": 16
+            },
+            "op_min_wait_time": 0,
+            "op_max_wait_time": 600,
+            "op_max_wait_time_2": null,
+            "op_max_detour_time_factor": 150,
+            "op_offer_time_window": null,
+            "op_add_constant_detour_time": null,
+            "op_max_constant_detour_time": null,
+            "op_min_detour_time_window": null,
+            "op_const_boarding_time": 180,
+            "op_add_boarding_time": 0,
+            "op_base_fare": 200,
+            "op_distance_fare": 0,
+            "op_time_fare": 0.24,
+            "op_speed_factor": 1,
+            "op_min_standard_fare": 200,
+            "op_vr_control_func_dict": {
+                "func_key": "distance_and_user_times",
+                "vot": 0.45
+            },
+            "op_reoptimisation_timestep": 120,
+            "op_rp_batch_optimizer": "AlonsoMora"
+        }
+    ],
+    "directories": {
+        "main": "D:\\PROJECT_RA\\FleetPy",
+        "data": "D:\\PROJECT_RA\\FleetPy\\data",
+        "output": "D:\\PROJECT_RA\\FleetPy\\studies\\rockingham_study\\results\\rockingham_res7",
+        "network": "D:\\PROJECT_RA\\FleetPy\\data\\networks\\rockingham_res7",
+        "vehicles": "D:\\PROJECT_RA\\FleetPy\\data\\vehicles",
+        "fleetctrl": "D:\\PROJECT_RA\\FleetPy\\data\\fleetctrl",
+        "demand": "D:\\PROJECT_RA\\FleetPy\\data\\demand\\skat_fy24_res7\\matched\\rockingham_res7"
+    }
+}

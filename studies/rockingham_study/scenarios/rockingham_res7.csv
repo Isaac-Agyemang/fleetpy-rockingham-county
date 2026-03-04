@@ -1,0 +1,2 @@
+op_module,scenario_name,rq_file,op_fleet_composition,op_rp_batch_optimizer,n_parallel_sim
+PoolingIRSAssignmentBatchOptimization,rockingham_res7,requests.csv,rockingham_vehtype:16,AlonsoMora,1
